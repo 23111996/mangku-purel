@@ -83,6 +83,7 @@ def uaku():
 		for un in aa:
 			ua.write(un+'\n')
 		ua=open('.bbnew.txt','r').read().splitlines()
+               ua  =  f"Mozilla/5.0 (iPhone; CPU iPhone OS { str ( versi ) } seperti Mac OS X) AppleWebKit/ { str ( verchrome ) } (KHTML, like Gecko) Mobile/ { str ( mob ) } [FBAN/MessengerForiOS ;FBAV/112.0.0.36. { str ( random .randint ( 70 , 150 )) 
 #------------[ INDICATION ]---------------#
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
@@ -126,13 +127,13 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	clear()
-	alvino_xy(f'''\t{asu} ______                                              
+	Aryez_xy(f'''\t{asu} ______                                              
 \t|_   _ \                                             
-\t  | |_) | _ .--.  ,--.   ____   ____  .---.  _ .--.  
-\t  |  __'.[ `/'`\]`'_\ : [_   ] [_   ]/ /__\\[ `/'`\] 
-\t _| |__) || |    // | |, .' /_  .' /_| \__., | |     	
-\t|_______/[___]   \'-;__/[_____][_____]'.__.'[___]    	
-			{m}•{k}•{h}•{sir} Author : Alvino_Adijaya {x}{m}•{k}•{h}•{x}''')
+\t  | |_) | _ .--.  ,--.     
+\t  |  __'.[ `/'`\]`'_\ :  
+\t _| |__) || |    // | |     	
+\t|_______/[___]   \'-;__[ 	
+			{m}•{k}•{h}•{sir} Author : aris_jaya {x}{m}•{k}•{h}•{x}''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -198,18 +199,18 @@ def menu(id):
 	print('>> 4. Crack File	')
 	print('>> 5. Hasil Crack  ')
 	print('>> 0. Keluar       ')
-	_____alvino__adijaya_____ = input('\n>> Pilih : ')
+	_____aryes__adijaya_____ = input('\n>> Pilih : ')
 	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
-	elif _____alvino__adijaya_____ in ['2']:
+	elif _____aryes__adijaya_____ in ['2']:
 		dump_follower()
-	elif _____alvino__adijaya_____ in ['3']:
+	elif _____aryes__adijaya_____ in ['3']:
 		error()
-	elif _____alvino__adijaya_____ in ['4']:
+	elif _____aryes__adijaya_____ in ['4']:
 		crack_file()
-	elif _____alvino__adijaya_____ in ['5']:
+	elif _____aryes__adijaya_____ in ['5']:
 		result()
-	elif _____alvino__adijaya_____ in ['0']:
+	elif _____aryes__adijaya_____ in ['0']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
 		print('>> Sukses Logout+Hapus Kukis ')
@@ -223,8 +224,8 @@ def error():
 	back()
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	print('>> Hasil OK Anda ')
-	print('>> Hasil CP Anda ')
+	print('>> Hasil cp Anda ')
+	print('>> Hasil ok Anda ')
 	print('>> Kembali	')
 	kz = input('\n>> Pilih : ')
 	if kz in ['1','01']:
@@ -317,7 +318,7 @@ def result():
 	elif kz in ['0','00']:
 		back()
 	else:
-		print('>> Pilih Yang Bener Kontol ')
+		print('>> Pilih Yang Bener cok ')
 		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
@@ -500,47 +501,9 @@ def grup1(urls):
 				lah()
 		except KeyboardInterrupt:
 			lah()
-#-------------[ CRACK-FROM-FILE ]------------------#
+#-------------[ CRACK-EMAIL ]------------------#
 def crack_file():
-	try:vin = os.listdir('DUMP')
-	except FileNotFoundError:
-		print('>> File Tidak Ditemukan ')
-		time.sleep(2)
-		back()
-	if len(vin)==0:
-		print('>> Kamu Tidak Memiliki File Dump ')
-		time.sleep(2)
-		back()
-	else:
-		cih = 0
-		lol = {}
-		for isi in vin:
-			try:hem = open('DUMP/'+isi,'r').readlines()
-			except:continue
-			cih+=1
-			if cih<100:
-				nom = ''+str(cih)
-				lol.update({str(cih):str(isi)})
-				lol.update({nom:str(isi)})
-				print(f'>> %s. %s ({h} %s{x} idz )'%(nom,isi,len(hem)))
-			else:
-				lol.update({str(cih):str(isi)})
-				print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-				print('>> %s. %s ({h} %s {x}idz) '%(cih,isi,len(hem)))
-		geeh = input('\n>> Pilih : ')
-		try:geh = lol[geeh]
-		except KeyError:
-			print(f'{k}>> Pilih Yang Bener Kontol {x}')
-			time.sleep(3)
-			back()
-		try:lin = open('DUMP/'+geh,'r').read().splitlines()
-		except:
-			print('>> File Tidak Ditemukan, Coba Lagi Nanti ')
-			time.sleep(2)
-			back()
-		for xid in lin:
-			id.append(xid)
-		setting()
+	
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
 	print(f'{x}>> 1. Akun Old ')
