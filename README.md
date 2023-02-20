@@ -10,7 +10,7 @@ $ pip instal stdiomask
 $git clone https://github.com/23111996/mangku-purel
 $ ls
 $cd mangku-purel
-$python run.py
+$python sun.py
 ```
 ## Cek opsi
 ```
