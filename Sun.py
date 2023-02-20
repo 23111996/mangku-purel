@@ -83,7 +83,7 @@ def uaku():
 		for un in aa:
 			ua.write(un+'\n')
 		ua=open('.bbnew.txt','r').read().splitlines()
-               ua  =  f"Mozilla/5.0 (iPhone; CPU iPhone OS { str ( versi ) } seperti Mac OS X) AppleWebKit/ { str ( verchrome ) } (KHTML, like Gecko) Mobile/ { str ( mob ) } [FBAN/MessengerForiOS ;FBAV/112.0.0.36. { str ( random .randint ( 70 , 150 )) 
+                
 #------------[ INDICATION ]---------------#
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
@@ -129,10 +129,10 @@ def banner():
 	clear()
 	Aryez_xy(f'''\t{asu} ______                                              
 \t|_   _ \                                             
-\t  | |_) | _ .--.  ,--.     
-\t  |  __'.[ `/'`\]`'_\ :  
-\t _| |__) || |    // | |     	
-\t|_______/[___]   \'-;__[ 	
+\t  | |_) | _ .--.  
+\t  |  __'.[ `/'`\]`
+\t _| |__) || |   
+\t|_______/[___]   	[][][]
 			{m}•{k}•{h}•{sir} Author : aris_jaya {x}{m}•{k}•{h}•{x}''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
