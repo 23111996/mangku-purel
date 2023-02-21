@@ -23,7 +23,7 @@ def dapatkan_nama(cookie, token_eaag):
     with requests.Session() as r:
         r.headers.update({
             'host': 'graph.facebook.com',
-            'user-agent': 'Mozilla/5.0 (Linux; Android 11; RMX2144 Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/375.1.0.28.111;]',
+            'user-agent': 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; Redmi Note 5 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/61.0.3163.128 Seluler Safari/537.36 XiaoMi/MiuiBrowser /10.3.2]',
             'cookie': cookie
         })
         response = r.get('https://graph.facebook.com/v15.0/me/?fields=id,name&access_token={}'.format(token_eaag)).json()
@@ -45,7 +45,7 @@ def login_cookie():
             with requests.Session() as r:
                 r.headers.update({
                     'cookie': cookie,
-                    'user-agent': 'Mozilla/5.0 (Linux; Android 11; RMX2144 Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/375.1.0.28.111;]',
+                    'user-agent': 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; Redmi Note 5 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/61.0.3163.128 Seluler Safari/537.36 XiaoMi/MiuiBrowser /10.3.2;]',
                     'host': 'business.facebook.com'
                 })
                 response3 = r.get('https://business.facebook.com/business_locations').text
@@ -150,6 +150,8 @@ class dump:
                     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
                     'host': 'm.facebook.com',
                     'user-agent': 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/35.0.0.48.273;]',
+                    'user-agent': 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; Redmi Note 5 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/61.0.3163.128 Seluler Safari/537.36 XiaoMi/MiuiBrowser /10.3.2;]',
+                    'user-agent': 'Mozilla/5.0 (Linux; U; Android 11; id-id; Redmi Note 9 Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.6.0-gn;]',
                     'accept-language': 'id,en;q=0.9',
                 })
                 r.cookies.update({
